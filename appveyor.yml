@@ -1,7 +1,7 @@
 #---------------------------------#
 #      environment configuration  #
 #---------------------------------#
-version: 2.9.{build}.0
+version: 2.9.{build}.1
 install:
     - git clone https://github.com/johlju/DscResource.Tests
     - cd "%APPVEYOR_BUILD_FOLDER%\DscResource.Tests"
