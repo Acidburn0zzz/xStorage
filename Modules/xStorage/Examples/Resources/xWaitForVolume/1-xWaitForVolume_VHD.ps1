@@ -5,6 +5,7 @@
 configuration Example
 {
     Import-DscResource -ModuleName xStorage
+
     xMountImage MountVHD
     {
         ImagePath   = 'd:\Data\Disk1.vhd'
