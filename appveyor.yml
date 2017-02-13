@@ -3,7 +3,10 @@
 #---------------------------------#
 version: 2.9.{build}.0
 install:
-    - git clone https://github.com/PowerShell/DscResource.Tests
+    - git clone https://github.com/johlju/DscResource.Tests
+    - cd "%APPVEYOR_BUILD_FOLDER%\DscResource.Tests"
+    - git checkout changes-to-example-test
+    - cd "%APPVEYOR_BUILD_FOLDER%"
 
     - ps: |
         $moduleName = 'xStorage'
